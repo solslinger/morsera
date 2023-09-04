@@ -1,0 +1,6 @@
+[submodule "morsera-frontend"]
+	path = morsera-frontend
+	url = https://github.com/solslinger/morsera-frontend
+[submodule "morsera-contracts"]
+	path = morsera-contracts
+	url = https://github.com/solslinger/morsera-contracts

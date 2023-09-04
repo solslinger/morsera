@@ -4,7 +4,7 @@ This is the main Morsera repository, it contains submodules for contracts, front
 
 ## Morsera Overview
 
-Morsera allows Gnosis Safes to configure arbitrary transactions that become executable by the Safe at a given time in the future.
+Morsera allows Gnosis Safes to configure arbitrary transactions that become executable at a given time in the future.
 The trigger can be defined by a specific timestamp or by an inactivity delay. 
 
 ### Why would someone want this?
@@ -18,7 +18,9 @@ In the event of key loss, a solid contingency plan is invaluable.
 
 ### How does it work?
 
-To set up Morsera, a Safe deploys and adds a single contract as both a module and guard. Being a module allows the contract to execute transactions on the Safe's behalf, and being a guard allows the contract to keep track of the Safe's last tx timestamp.
+To set up Morsera, a Safe deploys and adds a single contract (`DeadManSwitch`) as both a module and guard. Being a module allows the contract to execute transactions on the Safe's behalf, and being a guard allows the contract to keep track of the Safe's last tx timestamp.
+
+The Safe can then tell the `DeadManSwitch` to set up arbitrary delayed transactions.
 
 ## Implementation Status (WIP)
 
