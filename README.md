@@ -1,10 +1,10 @@
-# Morsera: A Dead Man's Switch for Gnosis Safe
+# Morsera: A Dead Man's Switch for Safe
 
 This is the main Morsera repository, it contains submodules for contracts, frontend, and docs.
 
 ## Morsera Overview
 
-Morsera allows Gnosis Safes to configure arbitrary transactions that become executable at a given time in the future.
+Morsera allows Safes to configure arbitrary transactions that become executable at a given time in the future.
 The trigger can be defined by a specific timestamp or by an inactivity delay. 
 
 ### Why would someone want this?
